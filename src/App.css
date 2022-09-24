@@ -1,38 +1,41 @@
-.App {
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #eeeeee;
+}
+
+.urbanTitulo {
+  list-style: none;
+  font-size: 55px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  margin-left: 70%;
+  width: 100%;
+}
+
+.linkMenu, .linkSubmenu, #basic-nav-dropdown {
+  margin-right: 15%;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: #000000;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.iconCarrito {
+  font-size: 30px;
+  margin-left: 45%;
+  margin-top: 1%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.greeting {
+  margin-top: 5%;
+  color: #000000;
+  text-align: center;
 }
