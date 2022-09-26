@@ -7,23 +7,26 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function NavBarPagina () {
     return (
        <div> 
-            <Navbar bg="light" expand="lg" sticky="top" class="border-bottom border-dark">
-                <Container className="navbar">
-                    <Navbar.Brand className='urbanTitulo' href="#home"><i><b>URBAN.</b></i></Navbar.Brand>
-                    <Navbar.Collapse className="justify-content-end flex-grow-1 pe-3 menu">
-                        <Nav.Link href="#home" className='linkMenu'>INICIO</Nav.Link>
-                        <Nav.Link href="#link" className='linkMenu'>SOBRE NOSOTROS</Nav.Link>
-                        <Nav.Link href="#link" className='linkMenu'>CATÁLOGO</Nav.Link>
+            <Navbar bg="light" expand="lg" sticky="top" class="px-3">
+                <Container>
+                    <Navbar.Brand className='urbanTitulo' href="#home"><h2><i><b>URBAN.</b></i></h2></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end flex-grow-1 pe-3 menu">
+
+                        <Nav.Link href="#home" className='linkMenu'><h5>INICIO</h5></Nav.Link>
+                        <Nav.Link href="#link" className='linkMenu'><h5>SOBRE NOSOTROS</h5></Nav.Link>
+                        <Nav.Link href="#link" className='linkMenu'><h5>CATÁLOGO</h5></Nav.Link>
+
                         <NavDropdown title="MARCAS" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1" className='linkSubmenu'>ADIDAS</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.1" className='linkSubmenu'><h6>ADIDAS</h6></NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.2" className='linkSubmenu'>NIKE</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2" className='linkSubmenu'><h6>NIKE</h6></NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.3" className='linkSubmenu'>VANS</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3" className='linkSubmenu'><h6>VANS</h6></NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4" className='linkSubmenu'>CONVERSE</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.4" className='linkSubmenu'><h6>CONVERSE</h6></NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4" className='linkSubmenu'>PUMA</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.4" className='linkSubmenu'><h6>PUMA</h6></NavDropdown.Item>
                         </NavDropdown>
                     </Navbar.Collapse>
                 </Container>

@@ -1,12 +1,6 @@
-.navbar {
-  display: flex;
-  flex-direction: row;
-  background-color: #eeeeee;
-}
-
 .urbanTitulo {
   list-style: none;
-  font-size: 55px;
+  font-size: 750px;
   text-decoration: none;
   color: #000000;
 }
@@ -15,7 +9,7 @@
   display: flex;
   flex-direction: row;
   margin-top: 2%;
-  margin-left: 70%;
+  margin-left: 60%;
   width: 100%;
 }
 
@@ -30,8 +24,9 @@
 
 .iconCarrito {
   font-size: 30px;
-  margin-left: 45%;
+  margin-left: 5%;
   margin-top: 1%;
+  margin-right: 3%;
   cursor: pointer;
 }
 
