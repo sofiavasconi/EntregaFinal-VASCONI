@@ -8,8 +8,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBarPagina />
-        <ItemListContainer greeting='Bienvenido a URBAN.'/>
       </header>
+      <main>
+        <ItemListContainer greeting='Bienvenido a URBAN.'/>
+      </main>
+      
     </div>
   );
 }
