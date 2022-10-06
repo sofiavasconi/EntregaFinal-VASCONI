@@ -1,6 +1,6 @@
 import React from 'react';
 import Item from './Item';
-import { productos } from '../mock/productsMock';
+
 
 const ItemList = (props) => {
     //mapeo de los productos

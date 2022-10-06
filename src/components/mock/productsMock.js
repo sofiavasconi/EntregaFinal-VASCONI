@@ -1,15 +1,15 @@
 export const productos = [
     {
         id: 1,
-        titulo: "AIR FORCE 1 '07 blanco",
+        titulo: "AIR FORCE 1 '07",
         precio: 15000,
         stock: 10,
-        marca: "nike",
+        marca: "NIKE",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985680/fotos/fotos/air_force_1_07_fd8wcy.webp",
     },
     {
         id: 2,
-        titulo: "AIR JORDAN 1 LOW rojo",
+        titulo: "AIR JORDAN 1 LOW",
         precio: 15000,
         stock: 10,
         marca: "NIKE",
@@ -17,7 +17,7 @@ export const productos = [
     },
     {
         id: 3,
-        titulo: "AIR JORDAN 1 MID rojo",
+        titulo: "AIR JORDAN 1 MID",
         precio: 20000,
         stock: 10,
         marca: "NIKE",
@@ -25,7 +25,7 @@ export const productos = [
     },
     {
         id: 4,
-        titulo: "AIR JORDAN 1 LOW amarillo",
+        titulo: "AIR JORDAN 1 LOW",
         precio: 15000,
         stock: 10,
         marca: "NIKE",
@@ -33,7 +33,7 @@ export const productos = [
     },
     {
         id: 5,
-        titulo: "AIR JORDAN 1 MID blanco",
+        titulo: "AIR JORDAN 1 MID",
         precio: 20000,
         stock: 10,
         marca: "NIKE",
@@ -41,7 +41,7 @@ export const productos = [
     },
     {
         id: 6,
-        titulo: "U OLD SKOOL negro",
+        titulo: "U OLD SKOOL",
         precio: 20000,
         stock: 10,
         marca: "VANS",
@@ -49,7 +49,7 @@ export const productos = [
     },
     {
         id: 7,
-        titulo: "U OLD SKOOL azul",
+        titulo: "U OLD SKOOL",
         precio: 20000,
         stock: 10,
         marca: "VANS",
@@ -61,11 +61,11 @@ export const productos = [
         precio: 20000,
         stock: 10,
         marca: "VANS",
-        imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985681/fotos/fotos/U_OLD_SKOOL_blue_f6qhzb.jpg",
+        imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985678/fotos/fotos/U_OLD_SKOOL_44_DX_xawexs.jpg",
     },
     {
         id: 9,
-        titulo: "U AUTHENTIC negro",
+        titulo: "U AUTHENTIC",
         precio: 15000,
         stock: 10,
         marca: "VANS",
@@ -73,7 +73,7 @@ export const productos = [
     },
     {
         id: 10,
-        titulo: "U AUTHENTIC azul",
+        titulo: "U AUTHENTIC",
         precio: 15000,
         stock: 10,
         marca: "VANS",
@@ -89,7 +89,7 @@ export const productos = [
     },
     {
         id: 12,
-        titulo: "CHUCK TAYLOR CORE OX blanco",
+        titulo: "CHUCK TAYLOR CORE OX",
         precio: 15000,
         stock: 10,
         marca: "CONVERSE",
@@ -97,7 +97,7 @@ export const productos = [
     },
     {
         id: 13,
-        titulo: "CHUCK TAYLOR CORE OX negro",
+        titulo: "CHUCK TAYLOR CORE OX",
         precio: 15000,
         stock: 10,
         marca: "CONVERSE",
@@ -105,7 +105,7 @@ export const productos = [
     },
     {
         id: 14,
-        titulo: "CHUCK TAYLOR CORE OX azul",
+        titulo: "CHUCK TAYLOR CORE OX",
         precio: 15000,
         stock: 10,
         marca: "CONVERSE",
@@ -113,7 +113,7 @@ export const productos = [
     },
     {
         id: 15,
-        titulo: "CHUCK TAYLOR CORE HI rojo",
+        titulo: "CHUCK TAYLOR CORE HI",
         precio: 20000,
         stock: 10,
         marca: "CONVERSE",
@@ -121,7 +121,7 @@ export const productos = [
     },
     { 
         id: 16,
-        titulo: "EL DISTRITO OX negro",
+        titulo: "EL DISTRITO OX",
         precio: 20000,
         stock: 10,
         marca: "CONVERSE",
@@ -129,7 +129,7 @@ export const productos = [
     },
     {
         id: 17,
-        titulo: "SUPERSTAR blanco y negro",
+        titulo: "SUPERSTAR",
         precio: 15000,
         stock: 10,
         marca: "ADIDAS",
@@ -137,7 +137,7 @@ export const productos = [
     },
     {
         id: 18,
-        titulo: "FORUM LOW CL rojo y verde",
+        titulo: "FORUM LOW CL",
         precio: 20000,
         stock: 10,
         marca: "ADIDAS",
@@ -145,7 +145,7 @@ export const productos = [
     },
     {
         id: 19,
-        titulo: "NY 90 blanco",
+        titulo: "NY 90",
         precio: 20000,
         stock: 10,
         marca: "ADIDAS",
@@ -153,7 +153,7 @@ export const productos = [
     },
     {
         id: 20,
-        titulo: "CALI STAR blanco",
+        titulo: "CALI STAR",
         precio: 15000,
         stock: 10,
         marca: "PUMA",
@@ -161,7 +161,7 @@ export const productos = [
     },
     {
         id: 21,
-        titulo: "MAYZE STACK DC5 blanco",
+        titulo: "MAYZE STACK DC5",
         precio: 20000,
         stock: 10,
         marca: "PUMA",
@@ -169,7 +169,7 @@ export const productos = [
     },
     {
         id: 22,
-        titulo: "MAYZE SD negro",
+        titulo: "MAYZE SD",
         precio: 20000,
         stock: 10,
         marca: "PUMA",

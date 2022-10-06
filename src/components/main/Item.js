@@ -1,22 +1,18 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
-
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Item = ({productos}) => {
     console.log (productos);
     return (
-        <article className="card">
-            <img src={productos.imagen} alt={productos.titulo} />
+        <section className="card">
+            <img className="imagenCard" src={productos.imagen} alt={productos.titulo} />
             <div className= "card-info">
-                <h2>{productos.titulo}</h2>
-                <h4>${productos.precio}</h4>
-                <h5>{productos.marca}</h5>
+                <h3 className='tituloCard'>{productos.titulo}</h3>
+                <h5 className='precioCard'>${productos.precio}</h5>
+                <FontAwesomeIcon icon={faCartPlus} className="masCarrito"/>
             </div>
-            <div className='agregarAlCarrito'>
-                <FontAwesomeIcon icon={faPlus} className="masCarrito"/>
-            </div>
-        </article>
+        </section>
     );
 };
 
