@@ -4,7 +4,7 @@ import { productos } from './mock/productsMock';
 
 function ItemListContainer ({greeting}) {
 
-    const [items, setItems] = useState([])
+    const [items, setItems] = useState([]);
 
     useEffect (() => {
         const traerProductos = () => {
