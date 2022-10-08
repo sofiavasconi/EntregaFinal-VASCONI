@@ -1,16 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import ItemList from './main/ItemList';
 import { productos } from './mock/productsMock';
+import { useParams } from 'react-router-dom';
+
 
 function ItemListContainer ({greeting}) {
 
     const [items, setItems] = useState([]);
 
+
+    const { marcaName } = useParams ();
+
+
     useEffect (() => {
         const traerProductos = () => {
             return new Promise ((res, rej) => {
+                
+                const productosFiltrados = productos.filter((prod) => prod.marca === marcaName)
+
+                const prod = marcaName ? productosFiltrados : productos;
+
                 setTimeout (() => {
-                    res(productos);
+                    res(prod);
                 }, 2000);  
             });
         };
@@ -21,14 +32,16 @@ function ItemListContainer ({greeting}) {
             .catch((error) => {
                 console.log(error);
             });
-    }, []);
+    }, [marcaName]);
 
     return (
         <div>
+            <main>
             <h1 className="greeting">{greeting}</h1>
-            <div className="listaDeProductos">
-                <ItemList items={items}/>
-            </div>
+                <div className="listaDeProductos">
+                    <ItemList items={items}/>
+                </div>
+            </main>
         </div>
     )
 }

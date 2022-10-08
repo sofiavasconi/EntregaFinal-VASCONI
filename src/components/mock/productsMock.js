@@ -4,7 +4,7 @@ export const productos = [
         titulo: "AIR FORCE 1 '07",
         precio: 15000,
         stock: 10,
-        marca: "NIKE",
+        marca: "nike",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985680/fotos/fotos/air_force_1_07_fd8wcy.webp",
     },
     {
@@ -12,7 +12,7 @@ export const productos = [
         titulo: "AIR JORDAN 1 LOW",
         precio: 15000,
         stock: 10,
-        marca: "NIKE",
+        marca: "nike",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985680/fotos/fotos/Air_Jordan_1_Low_red_t42ffv.webp",
     },
     {
@@ -20,7 +20,7 @@ export const productos = [
         titulo: "AIR JORDAN 1 MID",
         precio: 20000,
         stock: 10,
-        marca: "NIKE",
+        marca: "nike",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985680/fotos/fotos/Air_Jordan_1_Mid_red_cqwkyn.webp",
     },
     {
@@ -28,7 +28,7 @@ export const productos = [
         titulo: "AIR JORDAN 1 LOW",
         precio: 15000,
         stock: 10,
-        marca: "NIKE",
+        marca: "nike",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985678/fotos/fotos/Air_Jordan_1_Low_zcldus.webp",
     },
     {
@@ -36,7 +36,7 @@ export const productos = [
         titulo: "AIR JORDAN 1 MID",
         precio: 20000,
         stock: 10,
-        marca: "NIKE",
+        marca: "nike",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985682/fotos/fotos/Air_Jordan_1_Mid_ymuxuf.webp",
     },
     {
@@ -44,7 +44,7 @@ export const productos = [
         titulo: "U OLD SKOOL",
         precio: 20000,
         stock: 10,
-        marca: "VANS",
+        marca: "vans",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985678/fotos/fotos/U_OLD_SKOOL_modkwu.jpg",
     },
     {
@@ -52,7 +52,7 @@ export const productos = [
         titulo: "U OLD SKOOL",
         precio: 20000,
         stock: 10,
-        marca: "VANS",
+        marca: "vans",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985681/fotos/fotos/U_OLD_SKOOL_blue_f6qhzb.jpg",
     },
     {
@@ -60,7 +60,7 @@ export const productos = [
         titulo: "U OLD SKOOL 44 DX",
         precio: 20000,
         stock: 10,
-        marca: "VANS",
+        marca: "vans",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985678/fotos/fotos/U_OLD_SKOOL_44_DX_xawexs.jpg",
     },
     {
@@ -68,7 +68,7 @@ export const productos = [
         titulo: "U AUTHENTIC",
         precio: 15000,
         stock: 10,
-        marca: "VANS",
+        marca: "vans",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985680/fotos/fotos/U_AUTHENTIC_zwywxg.jpg",
     },
     {
@@ -76,7 +76,7 @@ export const productos = [
         titulo: "U AUTHENTIC",
         precio: 15000,
         stock: 10,
-        marca: "VANS",
+        marca: "vans",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985680/fotos/fotos/U_AUTHENTIC_blue_kbcrhb.jpg",
     },
     {
@@ -84,7 +84,7 @@ export const productos = [
         titulo: "U AUTHENTIC 44 DX",
         precio: 15000,
         stock: 10,
-        marca: "VANS",
+        marca: "vans",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985679/fotos/fotos/U_Authentic_44_DX_vjifpv.jpg",
     },
     {
@@ -92,7 +92,7 @@ export const productos = [
         titulo: "CHUCK TAYLOR CORE OX",
         precio: 15000,
         stock: 10,
-        marca: "CONVERSE",
+        marca: "converse",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985683/fotos/fotos/Chuck_Taylor_Core_Ox_white_q86khn.jpg",
     },
     {
@@ -100,7 +100,7 @@ export const productos = [
         titulo: "CHUCK TAYLOR CORE OX",
         precio: 15000,
         stock: 10,
-        marca: "CONVERSE",
+        marca: "converse",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985682/fotos/fotos/Chuck_Taylor_Core_Ox_black_ncwuds.jpg",
     },
     {
@@ -108,7 +108,7 @@ export const productos = [
         titulo: "CHUCK TAYLOR CORE OX",
         precio: 15000,
         stock: 10,
-        marca: "CONVERSE",
+        marca: "converse",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985683/fotos/fotos/Chuck_Taylor_Core_Ox_blue_sbw631.jpg",
     },
     {
@@ -116,7 +116,7 @@ export const productos = [
         titulo: "CHUCK TAYLOR CORE HI",
         precio: 20000,
         stock: 10,
-        marca: "CONVERSE",
+        marca: "converse",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985684/fotos/fotos/Chuck_Taylor_Core_Hi_red_sdqeio.jpg",
     },
     { 
@@ -124,7 +124,7 @@ export const productos = [
         titulo: "EL DISTRITO OX",
         precio: 20000,
         stock: 10,
-        marca: "CONVERSE",
+        marca: "converse",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985682/fotos/fotos/El_Distrito_Ox_wxmjpb.jpg",
     },
     {
@@ -132,7 +132,7 @@ export const productos = [
         titulo: "SUPERSTAR",
         precio: 15000,
         stock: 10,
-        marca: "ADIDAS",
+        marca: "adidas",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985680/fotos/fotos/SUPERSTAR_rycnv6.webp",
     },
     {
@@ -140,7 +140,7 @@ export const productos = [
         titulo: "FORUM LOW CL",
         precio: 20000,
         stock: 10,
-        marca: "ADIDAS",
+        marca: "adidas",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985680/fotos/fotos/FORUM_LOW_CL_ml2p8o.webp",
     },
     {
@@ -148,7 +148,7 @@ export const productos = [
         titulo: "NY 90",
         precio: 20000,
         stock: 10,
-        marca: "ADIDAS",
+        marca: "adidas",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985681/fotos/fotos/NY_90_ktdpga.webp",
     },
     {
@@ -156,7 +156,7 @@ export const productos = [
         titulo: "CALI STAR",
         precio: 15000,
         stock: 10,
-        marca: "PUMA",
+        marca: "puma",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985681/fotos/fotos/Cali_Star_qgxjo3.webp",
     },
     {
@@ -164,7 +164,7 @@ export const productos = [
         titulo: "MAYZE STACK DC5",
         precio: 20000,
         stock: 10,
-        marca: "PUMA",
+        marca: "puma",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985678/fotos/fotos/Mayze_Stack_DC5_gra0l5.webp",
     },
     {
@@ -172,7 +172,7 @@ export const productos = [
         titulo: "MAYZE SD",
         precio: 20000,
         stock: 10,
-        marca: "PUMA",
+        marca: "puma",
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985678/fotos/fotos/Mayze_SD_bcxqkd.webp",
     },
 ];
