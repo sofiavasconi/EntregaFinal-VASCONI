@@ -1,3 +1,5 @@
+import ItemCount from "./ItemCount";
+
 const ItemDetail = ({ item }) => {
     return (
         <div className="divDetalle">
@@ -7,6 +9,7 @@ const ItemDetail = ({ item }) => {
                 <p className="detalle">
                     Zapatilla unisex con talles a elección. Envíos a todo el país.
                 </p>
+                <ItemCount stock={10} initial={1}/>
             </div>
         </div>
     );

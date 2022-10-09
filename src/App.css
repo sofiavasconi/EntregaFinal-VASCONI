@@ -13,6 +13,7 @@
   width: 100%;
 }
 
+
 .linkMenu, .linkSubmenu, #basic-nav-dropdown {
   margin-right: 15%;
   font-size: 20px;
@@ -104,4 +105,54 @@
 .detalle {
   font-size: 18px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.cardLink {
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer {
+  color: #000000;
+  text-align: center;
+  margin-top: 3%;
+  background-color: rgb(230, 230, 230);
+}
+
+.containerCount {
+  display: flex;
+  flex-direction: row;
+}
+
+.botonesCount {
+  display: flex;
+  flex-direction: row;
+}
+
+.sumar, .restar {
+  background-color: #000000;
+  font-size: 30px;
+  color: #ffffff;
+  border-radius: 10%;
+}
+
+.sumar:disabled, .restar:disabled {
+  opacity: 0.3;
+}
+
+.carritoDetalle {
+  width: 30%;
+  margin-top: 3%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.numeroDeProductos {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin-top: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
