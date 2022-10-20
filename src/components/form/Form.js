@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Form = ()=> {
 
@@ -18,6 +18,20 @@ const Form = ()=> {
     const handleChangeLastName = (e) => {
         setLastName(e.taget.value);
     };
+
+    const handleMouseMove = (e) => {
+        console.log(e.clientX, e.clientY);
+    }
+
+    useEffect (() => {
+        window.addEventListener('mousemove', handleMouseMove);
+        return () => {
+            //clean up function
+            window.removeEventListener('mousemove', handleMouseMove);
+        }
+    })
+
+
 
     return (
         <div>
