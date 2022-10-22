@@ -6,10 +6,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cart from './components/cart/Cart';
 import Footer from './components/footer/Footer';
 import Form from './components/form/Form';
+import Provider from './context/CartContext';
 
 
 function App() {
   return (
+    <Provider>
     <BrowserRouter>
       <div className="App">
         <header className="App-header">
@@ -26,6 +28,7 @@ function App() {
         <Footer />
       </div>
     </BrowserRouter>
+    </Provider>
   );
 }
 

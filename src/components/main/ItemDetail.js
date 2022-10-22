@@ -1,12 +1,13 @@
 import { useState } from "react";
 import ItemCount from "./ItemCount";
+import { Link } from "react-router-dom";
 
 const ItemDetail = ({ item }) => {
 
-    const [show, setShow] = useState(true);
+    const [unidades, setUnidades] = useState(0);
 
     const prueba = (numero) => {
-        setShow(false);
+        setUnidades(numero);
     };
 
     return (
@@ -17,12 +18,11 @@ const ItemDetail = ({ item }) => {
                 <p className="detalle">
                     Zapatilla unisex con talles a elección. Envíos a todo el país.
                 </p>
-                <ItemCount prueba={prueba} stock={10} initial={1}/>
-
-                {show ? (
-                    <p>Este es el item count</p>
+                
+                {unidades === 0 ? (
+                    <ItemCount prueba={prueba} stock={10} initial={1}/>
                 ) : (
-                    <button>Ir al carrito</button>
+                    <Link to='/cart'>Ir al carrito</Link>
                 )}
                 
             </div>
