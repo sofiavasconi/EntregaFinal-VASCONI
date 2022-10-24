@@ -4,7 +4,7 @@ import ItemDetail from "../main/ItemDetail";
 
 const Cart = () => {
 
-    const { cart } = useContext (CartContext)
+    const { cart, deleteAll, deleteOne } = useContext (CartContext)
 
     return (
         <div>
