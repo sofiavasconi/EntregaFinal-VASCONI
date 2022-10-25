@@ -13,9 +13,6 @@ const ItemCount = (props) => {
         count > props.initial && setCount(count - 1);
     };
 
-    const agregar = () => {
-        props.prueba(count);
-    };
 
     return (
         <div className="containerCount">
@@ -24,7 +21,7 @@ const ItemCount = (props) => {
                 <p className='numeroDeProductos'>{count}</p>
                 <button disabled={count === props.stock} onClick={sumar} className='sumar'>+</button>
             </div>
-            <FontAwesomeIcon icon={faCartPlus} onClick={agregar} className="carritoDetalle"/>
+            <FontAwesomeIcon icon={faCartPlus} onClick={()=> props.prueba(count)} className="carritoDetalle"/>
         </div>
     );
 };
