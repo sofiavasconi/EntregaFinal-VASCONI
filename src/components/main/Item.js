@@ -1,6 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 
@@ -12,7 +10,6 @@ const Item = ({productos}) => {
             <div className= "card-info">
                 <h3 className='tituloCard'>{productos.titulo}</h3>
                 <h5 className='precioCard'>${productos.precio}</h5>
-                <FontAwesomeIcon icon={faCartPlus} className="masCarrito"/>
                 <Link to={`/item/${productos.id}`}><h6 className='cardLink'>VER DETALLE</h6></Link>
             </div>
         </section>

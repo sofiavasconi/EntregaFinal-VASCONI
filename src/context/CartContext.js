@@ -8,6 +8,7 @@ const Provider = ({children}) => {
 
         const addToCard = (item, cantidad) => {
             const producto = {...item, cantidad};
+
             if(isInCart(producto.id)) {
                 sumarCantidad(producto);
             }else {
@@ -33,6 +34,8 @@ const Provider = ({children}) => {
 
         const isInCart = (id) => cart.some((prod) => prod.id === id);
 
+
+        
         const deleteAll = () => setCart([]);
 
         const deleteOne = (id) => {
