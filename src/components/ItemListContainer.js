@@ -8,6 +8,8 @@ function ItemListContainer ({greeting}) {
 
     const [items, setItems] = useState([]);
 
+    const [cargando, setCargando] = useState(true);
+
 
     const { marcaName } = useParams ();
 
@@ -28,19 +30,29 @@ function ItemListContainer ({greeting}) {
         traerProductos()
             .then((res) => {
                 setItems(res);
+                setCargando(false);
             })
             .catch((error) => {
                 console.log(error);
             });
+
+        return () => setCargando(true);
     }, [marcaName]);
 
     return (
         <div>
             <main>
-            <h1 className="greeting">{greeting}</h1>
-                <div className="listaDeProductos">
-                    <ItemList items={items}/>
-                </div>
+                {
+                    cargando ? (
+                    <h1>Cargando</h1> ) : (
+                    <div className='catalogo'>
+                        <h1 className="greeting">{greeting}</h1>
+                        <div className="listaDeProductos">
+                        <ItemList items={items}/>
+                        </div>
+                    </div> 
+                )}
+            
             </main>
         </div>
     )

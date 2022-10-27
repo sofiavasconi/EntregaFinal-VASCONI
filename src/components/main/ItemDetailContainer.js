@@ -3,9 +3,12 @@ import ItemDetail from './ItemDetail';
 import { productos } from '../mock/productsMock';
 import { useParams } from 'react-router-dom';
 
+
 const ItemDetailContainer = () => {
 
     const [item, setItem] = useState({});
+
+    const [cargando, setCargando] = useState(true);
 
     const {id} = useParams();
 
@@ -22,15 +25,23 @@ const ItemDetailContainer = () => {
         traerProducto()
             .then((res) => {
                 setItem(res);
+                setCargando(false)
             })
             .catch((error) => {
                 console.log(error);
             });
+        return () => setCargando(true);
     }, [id]);
 
     return (
-        <div className="detalleDeProducto">
-            <ItemDetail item={item}/>
+        <div>
+            {
+                cargando ? (
+                <h1>Cargando</h1> ) : (
+                <div className="detalleDeProducto">
+                    <ItemDetail item={item}/>
+                </div>
+            )}
         </div>
     )
 }

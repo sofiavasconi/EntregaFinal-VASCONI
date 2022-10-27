@@ -18,8 +18,8 @@ function App() {
           <NavBarPagina />
         </header>
         <Routes>
-          <Route path='/' element={<ItemListContainer greeting='Bienvenido a URBAN.'/>} />
-          <Route path='/catalogo' element={<ItemListContainer />} />
+          <Route path='/' element={<ItemListContainer/>} />
+          <Route path='/catalogo' element={<ItemListContainer greeting='Bienvenido a URBAN.' />} />
           <Route path='/marcas/:marcaName' element={<ItemListContainer />} />
           <Route path='/item/:id' element={<ItemDetailContainer />} />
           <Route path='/cart' element={<Cart />} />
