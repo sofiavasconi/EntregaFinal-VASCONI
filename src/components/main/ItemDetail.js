@@ -7,11 +7,11 @@ const ItemDetail = ({ item }) => {
 
     const [unidades, setUnidades] = useState(0);
 
-    const { addToCart } = useContext(CartContext);
+    const { agregarAlCarrito } = useContext(CartContext);
 
     const prueba = (numero) => {
         setUnidades(numero);
-        addToCart(item, numero);
+        agregarAlCarrito(item, numero);
     };
 
     return (
@@ -26,7 +26,7 @@ const ItemDetail = ({ item }) => {
                 {unidades === 0 ? (
                     <ItemCount prueba={prueba} stock={10} initial={1}/>
                 ) : (
-                    <Link to='/cart'>Ir al carrito</Link>
+                    <Link to='/cart'>IR AL CARRITO</Link>
                 )}
                 
             </div>

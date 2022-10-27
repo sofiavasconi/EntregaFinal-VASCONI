@@ -58,9 +58,7 @@ function NavBarPagina () {
                     </Navbar.Collapse>
                 </Container>
 
-            <LinkContainer to='/cart'>
                 <CartWidget/>
-            </LinkContainer>
 
             </Navbar>
 
