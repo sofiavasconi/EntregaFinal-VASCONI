@@ -6,10 +6,10 @@ const Provider = ({children}) => {
 
         const [cart, setCart] = useState ([]);
 
-        const addToCard = (item, cantidad) => {
+        const agregarAlCarrito = (item, cantidad) => {
             const producto = {...item, cantidad};
 
-            if(isInCart(producto.id)) {
+            if(estaEnCarrito(producto.id)) {
                 sumarCantidad(producto);
             }else {
                 setCart ([...cart, producto]);
@@ -32,20 +32,20 @@ const Provider = ({children}) => {
             setCart (carritoActualizado);
         }
 
-        const isInCart = (id) => cart.some((prod) => prod.id === id);
+        const estaEnCarrito = (id) => cart.some((prod) => prod.id === id);
 
 
         
-        const deleteAll = () => setCart([]);
+        const borrarTodo = () => setCart([]);
 
-        const deleteOne = (id) => {
+        const borrarUno = (id) => {
             const productosFiltrados = cart.filter ((prod) => prod.id !== id)
             setCart(productosFiltrados);
         }
 
 
     return (
-        <CartContext.Provider value={{ cart, addToCard, deleteAll, deleteOne}}>
+        <CartContext.Provider value={{ cart, agregarAlCarrito, borrarTodo, borrarUno}}>
             {children}
         </CartContext.Provider>
 
