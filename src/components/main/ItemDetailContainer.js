@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ItemDetail from './ItemDetail';
 import { productos } from '../mock/productsMock';
 import { useParams } from 'react-router-dom';
+import PulseLoader from "react-spinners/PulseLoader";
 
 
 const ItemDetailContainer = () => {
@@ -37,7 +38,7 @@ const ItemDetailContainer = () => {
         <div>
             {
                 cargando ? (
-                <h1>Cargando</h1> ) : (
+                <PulseLoader /> ) : (
                 <div className="detalleDeProducto">
                     <ItemDetail item={item}/>
                 </div>

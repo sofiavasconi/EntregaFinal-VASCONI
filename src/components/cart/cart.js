@@ -6,9 +6,16 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const Cart = () => {
 
-    const { cart, borrarUno, borrarTodo } = useContext (CartContext);
+    const { cart, precioTotal, borrarUno, borrarTodo } = useContext (CartContext);
 
+    if(cart.length === 0){
+        return <p>No hay productos</p>
+    }
+        
+
+    
     return (
+
         <div className="containerCarrito">
             {cart.map((prod) => (
                 <div className="detalleCarrito" key={prod.id}>
@@ -21,7 +28,7 @@ const Cart = () => {
                 <FontAwesomeIcon icon={faTrash} className="trash1" onClick={()=>borrarUno(prod.id)} />
                 </div>
             ))}
-            <h2>Total: $0</h2>
+            <h2>TOTAL: ${precioTotal()}</h2>
             <FontAwesomeIcon icon={faTrash} className="trash2" onClick={borrarTodo} />
         </div>
     )

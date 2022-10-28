@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ItemList from './main/ItemList';
 import { productos } from './mock/productsMock';
 import { useParams } from 'react-router-dom';
+import PulseLoader from "react-spinners/PulseLoader";
 
 
 function ItemListContainer ({greeting}) {
@@ -44,7 +45,7 @@ function ItemListContainer ({greeting}) {
             <main>
                 {
                     cargando ? (
-                    <h1>Cargando</h1> ) : (
+                    <PulseLoader /> ) : (
                     <div className='catalogo'>
                         <h1 className="greeting">{greeting}</h1>
                         <div className="listaDeProductos">

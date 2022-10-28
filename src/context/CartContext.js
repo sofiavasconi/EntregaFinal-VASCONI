@@ -41,11 +41,30 @@ const Provider = ({children}) => {
         const borrarUno = (id) => {
             const productosFiltrados = cart.filter ((prod) => prod.id !== id)
             setCart(productosFiltrados);
+        };
+
+        const unidadesTotales = () => {
+            let acumulador = 0
+            const copia = [...cart]
+            copia.forEach ((prod)=> {
+                acumulador = acumulador + prod.cantidad
+            })
+            return acumulador
         }
 
+        
+        const precioTotal = () => {
+            let totalCarrito = 0
+            const copia = [...cart]
+            copia.forEach ((prod)=> {
+                totalCarrito = totalCarrito + prod.precio * prod.cantidad
+            })
+            return totalCarrito
+        }
+        
 
     return (
-        <CartContext.Provider value={{ cart, agregarAlCarrito, borrarTodo, borrarUno}}>
+        <CartContext.Provider value={{ cart, agregarAlCarrito, precioTotal,  unidadesTotales,  borrarTodo, borrarUno}}>
             {children}
         </CartContext.Provider>
 
