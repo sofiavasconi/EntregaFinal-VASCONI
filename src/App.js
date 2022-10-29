@@ -7,7 +7,7 @@ import Cart from './components/cart/cart';
 import Footer from './components/footer/Footer';
 import Form from './components/form/Form';
 import Provider from './context/CartContext';
-
+import FotoIndex from './components/mock/fotoIndex';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <NavBarPagina />
         </header>
         <Routes>
-          <Route path='/' element={<ItemListContainer/>} />
+          <Route path='/' element={<FotoIndex />} />
           <Route path='/catalogo' element={<ItemListContainer greeting='Bienvenido a URBAN.' />} />
           <Route path='/marcas/:marcaName' element={<ItemListContainer />} />
           <Route path='/item/:id' element={<ItemDetailContainer />} />

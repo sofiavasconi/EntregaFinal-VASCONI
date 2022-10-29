@@ -38,7 +38,9 @@ const ItemDetailContainer = () => {
         <div>
             {
                 cargando ? (
-                <PulseLoader /> ) : (
+                <PulseLoader 
+                    align="center"
+                /> ) : (
                 <div className="detalleDeProducto">
                     <ItemDetail item={item}/>
                 </div>

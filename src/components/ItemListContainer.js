@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import PulseLoader from "react-spinners/PulseLoader";
 
 
+
 function ItemListContainer ({greeting}) {
 
     const [items, setItems] = useState([]);
@@ -45,7 +46,9 @@ function ItemListContainer ({greeting}) {
             <main>
                 {
                     cargando ? (
-                    <PulseLoader /> ) : (
+                    <PulseLoader 
+                        align="center"
+                    /> ) : (
                     <div className='catalogo'>
                         <h1 className="greeting">{greeting}</h1>
                         <div className="listaDeProductos">
