@@ -7,7 +7,7 @@ import Cart from './components/cart/cart';
 import Footer from './components/footer/Footer';
 import Form from './components/form/Form';
 import Provider from './context/CartContext';
-import FotoIndex from './components/mock/fotoIndex';
+import FotoIndex from './components/fotoIndex';
 
 function App() {
   return (
