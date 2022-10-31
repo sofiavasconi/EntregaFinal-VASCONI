@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ItemList from './main/ItemList';
-import { productos } from './mock/productsMock';
 import { useParams } from 'react-router-dom';
 import PulseLoader from "react-spinners/PulseLoader";
+import { collection, getDocs, query, where } from 'firebase/firestore';
+import {baseDeDatos} from '../services/firebaseConfig';
 
 
 
@@ -17,7 +18,30 @@ function ItemListContainer ({greeting}) {
 
 
     useEffect (() => {
-        const traerProductos = () => {
+        const coleccionDeProductos = collection (baseDeDatos, 'productos');
+        /*const q = query(coleccionDeProductos, where("marca", "==", marcaName));*/
+
+        getDocs(coleccionDeProductos)
+            .then((res) => {
+                const productos = res.docs.map((prod)=>{
+                    return {
+                        id: prod.id,
+                        ...prod.data(),
+                    };
+                });
+                setItems(productos);
+            })
+
+
+            .catch((error) => {
+                console.log(error);
+            })
+
+            .finally (() => {
+                setCargando(false);
+            })
+            return () => setCargando (true);
+        /*const traerProductos = () => {
             return new Promise ((res, rej) => {
                 
                 const productosFiltrados = productos.filter((prod) => prod.marca === marcaName)
@@ -38,7 +62,7 @@ function ItemListContainer ({greeting}) {
                 console.log(error);
             });
 
-        return () => setCargando(true);
+        return () => setCargando(true);*/
     }, [marcaName]);
 
     return (
