@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
 
 const Cart = () => {
@@ -30,6 +31,7 @@ const Cart = () => {
             ))}
             <h2 className="totalCarrito">TOTAL: ${precioTotal()}</h2>
             <FontAwesomeIcon icon={faTrash} className="trash2" onClick={borrarTodo} />
+            <Link to="/form" className="linkForm">FINALIZAR LA COMPRA</Link>
         </div>
     )
 }

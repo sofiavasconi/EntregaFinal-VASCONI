@@ -4,8 +4,31 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { LinkContainer } from 'react-router-bootstrap';
+import { collection, getDocs } from 'firebase/firestore';
+import { baseDeDatos } from '../services/firebaseConfig';
+import { useEffect, useState } from 'react';
 
 function NavBarPagina () {
+
+    const [brands, setBrands] = useState ([]);
+
+    useEffect(() => {
+        const coleccionDeMarcas = collection(baseDeDatos, 'marcas')
+        getDocs(coleccionDeMarcas)
+            .then((res)=>{
+                const marcas = res.docs.map((marca)=>{
+                    return {
+                        id: marca.id,
+                        ...marca.data()
+                    }
+                })
+                setBrands(marcas);
+            })
+            .catch((error)=>{
+
+            })
+    }, [])
+
     return (
        <div> 
             <Navbar bg="light" expand="lg" sticky="top" class="px-3">
@@ -27,33 +50,13 @@ function NavBarPagina () {
                         </LinkContainer>
 
                         <NavDropdown title="MARCAS" id="basic-nav-dropdown">
-                            <LinkContainer to='/marcas/adidas'>
-                                <NavDropdown.Item className='linkSubmenu'><h6>ADIDAS</h6></NavDropdown.Item>
-                            </LinkContainer>
+                            {brands.map((marca)=>(
+                                <LinkContainer key={marca.id} to={`/marcas/${marca.path}`}>
+                                <NavDropdown.Item className='linkSubmenu'><h6>{marca.name}</h6></NavDropdown.Item>
+                                </LinkContainer>
+                                
+                            ))}
 
-                            <NavDropdown.Divider />
-
-                            <LinkContainer to='/marcas/nike'>
-                                <NavDropdown.Item className='linkSubmenu'><h6>NIKE</h6></NavDropdown.Item>
-                            </LinkContainer>
-
-                            <NavDropdown.Divider />
-
-                            <LinkContainer to='/marcas/vans'>
-                                <NavDropdown.Item className='linkSubmenu'><h6>VANS</h6></NavDropdown.Item>
-                            </LinkContainer>
-
-                            <NavDropdown.Divider />
-
-                            <LinkContainer to='/marcas/converse'>
-                                <NavDropdown.Item className='linkSubmenu'><h6>CONVERSE</h6></NavDropdown.Item>
-                            </LinkContainer>
-
-                            <NavDropdown.Divider />
-
-                            <LinkContainer to='/marcas/puma'>
-                                <NavDropdown.Item className='linkSubmenu'><h6>PUMA</h6></NavDropdown.Item>
-                            </LinkContainer>
                         </NavDropdown>
                     </Navbar.Collapse>
                 </Container>

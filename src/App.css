@@ -227,3 +227,12 @@
 .botonEnviar {
   margin-left: 48%;
 }
+
+.linkForm {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 150%;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 5%;
+}

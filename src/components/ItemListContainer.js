@@ -18,10 +18,14 @@ function ItemListContainer ({greeting}) {
 
 
     useEffect (() => {
-        const coleccionDeProductos = collection (baseDeDatos, 'productos');
-        /*const q = query(coleccionDeProductos, where("marca", "==", marcaName));*/
 
-        getDocs(coleccionDeProductos)
+        const coleccionDeProductos = collection (baseDeDatos, 'productos');
+
+
+        const referencia = marcaName ? query(coleccionDeProductos, where("marca", "==", marcaName)) : coleccionDeProductos
+
+
+        getDocs(referencia)
             .then((res) => {
                 const productos = res.docs.map((prod)=>{
                     return {
@@ -41,6 +45,11 @@ function ItemListContainer ({greeting}) {
                 setCargando(false);
             })
             return () => setCargando (true);
+
+            
+        
+
+
         /*const traerProductos = () => {
             return new Promise ((res, rej) => {
                 
