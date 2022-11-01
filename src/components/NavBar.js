@@ -54,9 +54,7 @@ function NavBarPagina () {
                                 <LinkContainer key={marca.id} to={`/marcas/${marca.path}`}>
                                 <NavDropdown.Item className='linkSubmenu'><h6>{marca.name}</h6></NavDropdown.Item>
                                 </LinkContainer>
-                                
                             ))}
-
                         </NavDropdown>
                     </Navbar.Collapse>
                 </Container>

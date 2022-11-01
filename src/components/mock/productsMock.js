@@ -1,6 +1,5 @@
 export const productos = [
     {
-        id: 1,
         titulo: "AIR FORCE 1 '07",
         precio: 15000,
         stock: 10,
@@ -8,7 +7,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985680/fotos/fotos/air_force_1_07_fd8wcy.webp",
     },
     {
-        id: 2,
         titulo: "AIR JORDAN 1 LOW",
         precio: 15000,
         stock: 10,
@@ -16,7 +14,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985680/fotos/fotos/Air_Jordan_1_Low_red_t42ffv.webp",
     },
     {
-        id: 3,
         titulo: "AIR JORDAN 1 MID",
         precio: 20000,
         stock: 10,
@@ -24,7 +21,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985680/fotos/fotos/Air_Jordan_1_Mid_red_cqwkyn.webp",
     },
     {
-        id: 4,
         titulo: "AIR JORDAN 1 LOW",
         precio: 15000,
         stock: 10,
@@ -32,7 +28,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985678/fotos/fotos/Air_Jordan_1_Low_zcldus.webp",
     },
     {
-        id: 5,
         titulo: "AIR JORDAN 1 MID",
         precio: 20000,
         stock: 10,
@@ -40,7 +35,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985682/fotos/fotos/Air_Jordan_1_Mid_ymuxuf.webp",
     },
     {
-        id: 6,
         titulo: "U OLD SKOOL",
         precio: 20000,
         stock: 10,
@@ -48,7 +42,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985678/fotos/fotos/U_OLD_SKOOL_modkwu.jpg",
     },
     {
-        id: 7,
         titulo: "U OLD SKOOL",
         precio: 20000,
         stock: 10,
@@ -56,7 +49,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985681/fotos/fotos/U_OLD_SKOOL_blue_f6qhzb.jpg",
     },
     {
-        id: 8,
         titulo: "U OLD SKOOL 44 DX",
         precio: 20000,
         stock: 10,
@@ -64,7 +56,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985678/fotos/fotos/U_OLD_SKOOL_44_DX_xawexs.jpg",
     },
     {
-        id: 9,
         titulo: "U AUTHENTIC",
         precio: 15000,
         stock: 10,
@@ -72,7 +63,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985680/fotos/fotos/U_AUTHENTIC_zwywxg.jpg",
     },
     {
-        id: 10,
         titulo: "U AUTHENTIC",
         precio: 15000,
         stock: 10,
@@ -80,7 +70,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985680/fotos/fotos/U_AUTHENTIC_blue_kbcrhb.jpg",
     },
     {
-        id: 11,
         titulo: "U AUTHENTIC 44 DX",
         precio: 15000,
         stock: 10,
@@ -88,7 +77,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985679/fotos/fotos/U_Authentic_44_DX_vjifpv.jpg",
     },
     {
-        id: 12,
         titulo: "CHUCK TAYLOR CORE OX",
         precio: 15000,
         stock: 10,
@@ -96,7 +84,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985683/fotos/fotos/Chuck_Taylor_Core_Ox_white_q86khn.jpg",
     },
     {
-        id: 13,
         titulo: "CHUCK TAYLOR CORE OX",
         precio: 15000,
         stock: 10,
@@ -104,7 +91,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985682/fotos/fotos/Chuck_Taylor_Core_Ox_black_ncwuds.jpg",
     },
     {
-        id: 14,
         titulo: "CHUCK TAYLOR CORE OX",
         precio: 15000,
         stock: 10,
@@ -112,7 +98,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985683/fotos/fotos/Chuck_Taylor_Core_Ox_blue_sbw631.jpg",
     },
     {
-        id: 15,
         titulo: "CHUCK TAYLOR CORE HI",
         precio: 20000,
         stock: 10,
@@ -120,7 +105,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985684/fotos/fotos/Chuck_Taylor_Core_Hi_red_sdqeio.jpg",
     },
     { 
-        id: 16,
         titulo: "EL DISTRITO OX",
         precio: 20000,
         stock: 10,
@@ -128,7 +112,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985682/fotos/fotos/El_Distrito_Ox_wxmjpb.jpg",
     },
     {
-        id: 17,
         titulo: "SUPERSTAR",
         precio: 15000,
         stock: 10,
@@ -136,7 +119,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985680/fotos/fotos/SUPERSTAR_rycnv6.webp",
     },
     {
-        id: 18,
         titulo: "FORUM LOW CL",
         precio: 20000,
         stock: 10,
@@ -144,7 +126,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985680/fotos/fotos/FORUM_LOW_CL_ml2p8o.webp",
     },
     {
-        id: 19,
         titulo: "NY 90",
         precio: 20000,
         stock: 10,
@@ -152,7 +133,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985681/fotos/fotos/NY_90_ktdpga.webp",
     },
     {
-        id: 20,
         titulo: "CALI STAR",
         precio: 15000,
         stock: 10,
@@ -160,7 +140,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985681/fotos/fotos/Cali_Star_qgxjo3.webp",
     },
     {
-        id: 21,
         titulo: "MAYZE STACK DC5",
         precio: 20000,
         stock: 10,
@@ -168,7 +147,6 @@ export const productos = [
         imagen: "https://res.cloudinary.com/dzra1mly1/image/upload/v1664985678/fotos/fotos/Mayze_Stack_DC5_gra0l5.webp",
     },
     {
-        id: 22,
         titulo: "MAYZE SD",
         precio: 20000,
         stock: 10,

@@ -9,6 +9,7 @@ import Form from './components/form/Form';
 import Provider from './context/CartContext';
 import FotoIndex from './components/fotoIndex';
 
+
 function App() {
   return (
     <Provider>

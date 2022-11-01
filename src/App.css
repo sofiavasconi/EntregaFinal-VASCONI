@@ -225,7 +225,7 @@
 }
 
 .botonEnviar {
-  margin-left: 48%;
+  margin-left: 3%;
 }
 
 .linkForm {
@@ -235,4 +235,10 @@
   text-decoration: none;
   text-align: center;
   margin-top: 5%;
+}
+
+.seguimiento {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
 }
