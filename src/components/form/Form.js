@@ -30,6 +30,8 @@ const Form = ()=> {
             fecha: serverTimestamp(),
         };
 
+
+        
         const ordenColeccion = collection(baseDeDatos, 'ordenes')
         addDoc(ordenColeccion, orden)
             .then((res) => {
@@ -82,8 +84,6 @@ const Form = ()=> {
     if(ordenId) {
         return (
         <h3 className="seguimiento">Tu compra fue realizada con éxito! Tu número de seguimiento es "{ordenId}"</h3>
-
-        
         )
     }
 
