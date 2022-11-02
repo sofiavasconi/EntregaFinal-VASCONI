@@ -85,7 +85,7 @@ const Form = ()=> {
         return (
         <h3 className="seguimiento">Tu compra fue realizada con éxito! Tu número de seguimiento es "{ordenId}"</h3>
         )
-    }
+    };
 
 
     return (
